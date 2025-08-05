@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat with Riley AI - Riley Brown</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Chat with Riley AI</h1>
+            <p class="subtitle">Ask me anything about AI, VibeCode, or content creation</p>
+            <div id="user-info" class="user-info"></div>
+            <button id="auth-button" class="auth-button">
+                <span class="link-text">Sign Out</span>
+            </button>
+        </header>
+
+        <main>
+            <div class="chat-container">
+                <div id="chat-messages" class="chat-messages"></div>
+                
+                <div class="chat-input-container">
+                    <form id="chat-form" class="chat-form">
+                        <textarea id="chat-input" placeholder="Ask Riley anything..." required></textarea>
+                        <button type="submit" id="send-btn" class="send-btn">
+                            <span class="link-text">Send</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <nav class="back-nav">
+                <a href="index.html" class="nav-link">
+                    <span class="link-text">← Back to Home</span>
+                </a>
+            </nav>
+        </main>
+    </div>
+
+    <script src="js/config.js"></script>
+    <script type="module" src="js/chat.js"></script>
+</body>
+</html>

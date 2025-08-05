@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Riley Brown</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sign In</h1>
+            <p class="subtitle">Access AI Chat and Community Features</p>
+        </header>
+
+        <main>
+            <div class="auth-container">
+                <div class="auth-methods">
+                    <button id="google-signin" class="auth-button google-btn">
+                        <span class="link-text">Continue with Google</span>
+                    </button>
+                    
+                    <div class="divider">
+                        <span>or</span>
+                    </div>
+                    
+                    <div class="email-auth">
+                        <form id="email-form">
+                            <input type="email" id="email" placeholder="Email" required>
+                            <input type="password" id="password" placeholder="Password" required>
+                            <div class="form-buttons">
+                                <button type="submit" id="signin-btn" class="auth-button">
+                                    <span class="link-text">Sign In</span>
+                                </button>
+                                <button type="button" id="signup-btn" class="auth-button secondary">
+                                    <span class="link-text">Sign Up</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                <div id="error-message" class="error-message"></div>
+            </div>
+
+            <nav class="back-nav">
+                <a href="index.html" class="nav-link">
+                    <span class="link-text">← Back to Home</span>
+                </a>
+            </nav>
+        </main>
+    </div>
+
+    <script type="module" src="js/signin.js"></script>
+</body>
+</html>
